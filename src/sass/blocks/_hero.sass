@@ -1,0 +1,72 @@
+
+
+.hero
+   padding: 50px 0px
+   &-block
+      display: flex
+   &-text
+      flex-basis: 45%
+      padding-right: 120px
+      &__title
+         +bold
+         font-size: 41px
+         color: #333333
+         line-height: 55px 
+         margin-bottom: 40px
+      &__subtitle
+         display: inline-block
+         margin-bottom: 70px
+         font-family: MuseoSansCyrl
+         font-size: 20px
+         color: #333333        
+         +bold
+   &-list
+      margin: 0
+      padding: 0
+      &__item
+         display: flex  
+         align-items: center
+         margin-bottom: 25px             
+      &__image
+         width: 40px
+         height: 40px
+         border: solid 2px $main-color
+         border-radius: 50%
+         display: flex
+         justify-content: center
+         align-items: center
+         margin-right: 30px
+      &__text
+         max-width: 300px   
+@media ( max-width: 1200px)
+   .hero
+      &-block
+         flex-direction: column
+      &-list
+         margin-bottom: 44px
+      &-text
+         padding-right: 0px   
+@media ( max-width: 768px)
+   .hero
+      &-text
+         &__title
+            font-size: 24px
+            line-height: 1.4
+            margin-bottom: 15px
+            +bold
+         &__subtitle
+            +bold
+            font-size: 16px
+            color: #333333
+            margin-bottom: 28px
+      &-list
+         &__item
+            margin-bottom: 20px
+         &__text
+            font-size: 12px
+         &__image
+            margin-right: 15px
+
+      
+      
+      
